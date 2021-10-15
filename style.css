@@ -162,7 +162,7 @@ header.navigation-header .menu-header {
 @media screen and (max-width: 1024px){
 
     header.navigation-header .navigation-content {
-        padding: 0 1rem;
+        padding: 0 .8rem;
     }
     header.navigation-header .logo-header {
         width: 50%;
@@ -170,7 +170,7 @@ header.navigation-header .menu-header {
     }
 
     header.navigation-header .logo-header a img {
-        max-width: 120px;
+        max-width: 124px;
     }
 }
 
@@ -283,16 +283,19 @@ header.navigation-header .menu-header ul li:hover>ul, header.navigation-header .
     top:34px;
 }
 
-header.navigation-header .menu-header ul.navmenu-header li.nav-item:last-child a {
+
+header.navigation-header .menu-header ul.navmenu-header li.nav-item:nth-last-child(-n+3) {
     display: none;
 }
+
+
 
 
 /* Hamburger */
 
 
 .hamburger div{
-    width: 30px;
+    width: 36px;
     height:5px;
     background: #97b9d4;
     border-radius: 2px;
@@ -501,7 +504,7 @@ header.navigation-header .menu-header .logged-mobile, header.navigation-header .
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding: 15px 35px;
+        padding: 15px 20px 15px 25px;
         border-bottom: 2px solid  #eee;
     }
 
@@ -528,7 +531,7 @@ header.navigation-header .menu-header .logged-mobile, header.navigation-header .
 
 @media (max-width: 1024px) and (max-width: 769px) {
     header.navigation-header .menu-header.mobile-active {
-        width:86% ;
+        width: 90%;
     }
 }
 
@@ -566,12 +569,12 @@ header.navigation-header .cta-header button {
 }
 
 .logged-mobile button.user-header {
-    margin: auto 6px;
+    margin: 0;
     padding: 3px 15px;
     font-family: 'Lato', sans-serif;  
     font-weight: 700;
     letter-spacing: 1px;
-    font-size: 1rem;  
+    font-size: 14px;  
     height: auto;
     min-height: 35px;
     min-width: 125px;
@@ -625,7 +628,6 @@ header.navigation-header .cta-header button img {
 
 .navigation-content .geolocation-header {
     min-width: 32px;
-    padding: 2px;
 }
 
 .geolocation-header img {
@@ -645,7 +647,10 @@ header.navigation-header .cta-header button img {
 
     header.navigation-header .cta-header button {
         font-size: 14px;
+        min-width:auto;
+        margin: auto;
     }
+    
 
     .navigation-content .geolocation-header {
         display:none;
@@ -765,7 +770,15 @@ button.button-logout {
         max-width: 14rem;
         font-size: .8rem;
         padding: 1rem;
+        box-shadow: -1px -1px 11px 1px rgb(0 0 0 / 22%);
+        -webkit-box-shadow: -1px -1px 11px 1px rgb(0 0 0 / 22%);
+        -moz-box-shadow: -1px -1px 11px 1px rgba(0,0,0,.22);
     }
+
+    .tooltip-points {
+        min-width: 16rem;
+    }
+    
 }
 
 .tooltip-user ul {
@@ -859,6 +872,8 @@ button.button-logout {
     background: #d5d9f1;
     box-sizing: border-box;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
     flex-basis: 50px;
     min-width: 50px;
     padding: .5rem;
@@ -1167,8 +1182,16 @@ section.section-footer-disclaimer .footer-disclaimer-logo-container .footer-disc
 @media screen and (max-width:1024px) {
 
 
+    section.footer-links .links-list-overview {
+        display: none;
+    }
+
     section.footer-links .links-list-overview .links-list-item {
         grid-column: span 6;
+    }
+
+    .social-icons-main {
+        margin-top: 0;
     }
 
 
