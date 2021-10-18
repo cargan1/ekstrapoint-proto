@@ -4,6 +4,7 @@ var menuContainer = document.querySelector(".menu-header");
 var menu = document.querySelector(".navmenu-header");
 var links = document.querySelectorAll(".navmenu-header li");
 var items = document.querySelectorAll(".nav-item");
+var points = document.querySelector(".points-header");
 
 
 hamburger.addEventListener('click', ()=>{
@@ -13,6 +14,12 @@ hamburger.addEventListener('click', ()=>{
     body.classList.toggle("scroll-overflow");
     //Hamburger Animation
     hamburger.classList.toggle("toggle");
+});
+
+
+points.addEventListener('click', ()=>{
+  //Points open on tab behavior
+   points.classList.toggle("points-active");
 });
 
 

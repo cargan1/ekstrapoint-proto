@@ -335,6 +335,13 @@ header.navigation-header .menu-header .logged-mobile, header.navigation-header .
         display:none;
     }
 
+    header.navigation-header .cta-header button.login-header {
+        display:none;
+    }
+
+
+
+
 
     .hamburger{
         display:block;
@@ -647,8 +654,9 @@ header.navigation-header .cta-header button img {
 
     header.navigation-header .cta-header button {
         font-size: 14px;
-        min-width:auto;
+        min-width:100px;
         margin: auto;
+        padding: 3px 8px;
     }
     
 
@@ -723,7 +731,7 @@ button.user-header:hover>.tooltip-user, button.user-header:active>.tooltip-user 
 }
 
 
-button.points-header:hover>.tooltip-points, button.points-header:active>.tooltip-points {
+button.points-header:hover>.tooltip-points, button.points-header:active>.tooltip-points, button.points-header.points-active .tooltip-points {
     left:auto;
     right:0;
 }
@@ -778,6 +786,15 @@ button.button-logout {
     .tooltip-points {
         min-width: 16rem;
     }
+
+    button.points-header:hover>.tooltip-points, button.points-header:active>.tooltip-points, button.points-header .tooltip-points {
+        display:none;
+    }
+
+    button.points-header.points-active .tooltip-points {
+        display: block;
+    }
+    
     
 }
 
