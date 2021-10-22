@@ -128,7 +128,8 @@ header.navigation-header .navigation-content {
     width:100%;
     display: flex;
     background-color: #fff;
-    min-height: 55px;
+    max-height: 55px;
+    height:100%;
     padding: 0 2rem;
     align-items: center;
     justify-content: space-between;
@@ -163,6 +164,7 @@ header.navigation-header .menu-header {
 
     header.navigation-header .navigation-content {
         padding: 0 .8rem;
+        height:55px;
     }
     header.navigation-header .logo-header {
         width: 50%;
@@ -200,7 +202,7 @@ header.navigation-header .menu-header ul li.nav-item:not(:last-child):after {
 
 header.navigation-header .menu-header ul li a {
     color: #23274f;
-    padding: 0 1.9rem;
+    padding: 21px 1.9rem;
     font-size:14px;
     font-weight: 700;
     white-space:nowrap;
@@ -224,7 +226,8 @@ header.navigation-header .menu-header ul li.menu-item-has-children a.navlink::be
     margin-right: 5px;
     position: absolute;
     left: 22px;
-    top: 3px;
+    top: 50%;
+    transform: translateY(-50%);
     border-radius: 3px
 }
 
@@ -280,7 +283,7 @@ header.navigation-header .menu-header ul li ul li a{
 
 header.navigation-header .menu-header ul li:hover>ul, header.navigation-header .menu-header ul li.focus>ul {
     right: auto;
-    top:34px;
+    top:55px;
 }
 
 
